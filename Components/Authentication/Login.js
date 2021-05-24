@@ -24,6 +24,7 @@ const Login = () => {
             .auth()
             .signInWithEmailAndPassword(email, password)
       dispatch(login(firebase.auth().currentUser.email))
+      router.replace('/dashboard')
     } catch (error) {
       console.log(error)
     }

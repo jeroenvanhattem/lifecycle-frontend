@@ -28,6 +28,7 @@ const Register = () => {
         .createUserWithEmailAndPassword(firstName, lastName, email, password)
 
       dispatch(login(firebase.auth().currentUser))
+      router.replace('/dashboard')
     } catch (error) {
       console.log(error)
     }

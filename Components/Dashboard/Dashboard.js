@@ -1,16 +1,26 @@
-import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import firebase from '../../Functions/Firebase'
+
+import Sidebar from './Sidebar'
+import DashboardContent from './DashboardContent'
+
 import styles from './Dashboard.module.css'
 
 const Dashboard = () => {
-  const router = useRouter()
 
-  const logoutHandler = () => {
-    router.replace('/logout')
-  }
+  const { isLoggedIn } = useSelector((state) => state.auth.isLoggedIn)
+
 
   return (
-    <div className={styles.dashbaord}>
-      <button onClick={logoutHandler}>Logout</button>
+    <div className={styles.dashboard}>
+      <div className={styles.sidebar}>
+        <Sidebar />
+      </div>
+
+      <div className={styles.dashboardContent}>
+        <DashboardContent />
+      </div>
     </div>
   )
 }
