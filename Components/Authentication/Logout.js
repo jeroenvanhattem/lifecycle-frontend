@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import {firebase} from '../../Functions/Firebase'
+import firebase from '../../Functions/Firebase'
 
 const Logout = () => {
   const router = useRouter()

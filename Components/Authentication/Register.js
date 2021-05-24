@@ -11,6 +11,8 @@ const Register = () => {
   const router = useRouter()
   const dispatch = useDispatch()
 
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -23,7 +25,7 @@ const Register = () => {
       // Login call here
       await firebase
         .auth()
-        .createUserWithEmailAndPassword(email, password)
+        .createUserWithEmailAndPassword(firstName, lastName, email, password)
 
       dispatch(login(firebase.auth().currentUser))
     } catch (error) {
@@ -37,6 +39,18 @@ const Register = () => {
       <div className="inputBox">
         <h3>Register</h3>
         <form onSubmit={registerHandler}>
+          <input
+            type='text'
+            value={firstName}
+            onChange={(event) => setFirstName(event.target.value)}
+            placeholder='First name'
+          />
+          <input
+            type='text'
+            value={lastName}
+            onChange={(event) => setLastName(event.target.value)}
+            placeholder='Last name'
+          />
           <input
             type='email'
             value={email}
