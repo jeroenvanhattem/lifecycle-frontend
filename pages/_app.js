@@ -1,7 +1,19 @@
+import { Provider, useDispatch } from 'react-redux'
+import { useEffect } from 'react'
+import { createWrapper } from 'next-redux-wrapper'
+import store from '../Store/Store'
+
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  )
 }
 
-export default MyApp
+const makeStore = () => store
+const wrapper = createWrapper(makeStore)
+
+export default wrapper.withRedux(MyApp)

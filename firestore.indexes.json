@@ -1,0 +1,30 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "alarms",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "deviceID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "alarmDateTime",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "alarmsdate",
+      "fieldPath": "alarmDateTime",
+      "indexes": [
+        {
+          "order": "DESCENDING",
+          "queryScope": "COLLECTION"
+        }
+      ]
+    }
+  ]
+}
