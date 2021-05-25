@@ -1,28 +1,18 @@
-import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useRouter } from 'next/router'
 import firebase from '../../Functions/Firebase'
-
-import Sidebar from './Sidebar'
-import DashboardContent from './DashboardContent'
 
 import styles from './Dashboard.module.css'
 
-const Dashboard = () => {
-
-  const { isLoggedIn } = useSelector((state) => state.auth.isLoggedIn)
-
+const DashboardContent = () => {
+  const router = useRouter()
 
   return (
     <div className={styles.dashboard}>
-      <div className={styles.sidebar}>
-        <Sidebar />
-      </div>
-
-      <div className={styles.dashboardContent}>
-        <DashboardContent />
+      <div className={styles.title}>
+        LifeCycle
       </div>
     </div>
   )
 }
 
-export default Dashboard
+export default DashboardContent
