@@ -1,8 +1,8 @@
-import {authActions} from '../Slices/AuthSlice'
+import { authActions } from '../Slices/AuthSlice'
 
 export const login = (user) => {
   return async (dispatch) => {
-    dispatch(authActions.login({user}))
+    dispatch(authActions.login({ user }))
   }
 }
 

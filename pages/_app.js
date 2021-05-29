@@ -1,5 +1,4 @@
 import { Provider, useDispatch } from 'react-redux'
-import { useEffect } from 'react'
 import { createWrapper } from 'next-redux-wrapper'
 import store from '../Store/Store'
 
@@ -11,6 +10,13 @@ const MyApp = ({ Component, pageProps }) => {
       <Component {...pageProps} />
     </Provider>
   )
+}
+
+const getInitialProps = async ({Component, ctx}) => {
+  const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
+
+  //Anything returned here can be accessed by the client
+  return {pageProps: pageProps};
 }
 
 const makeStore = () => store

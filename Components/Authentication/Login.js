@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../../Store/Actions/AuthActions'
 import firebase from '../../Functions/Firebase'
-import { getDevices } from '../../Functions/Firebase'
 import styles from './Login.module.css'
 
 const Login = () => {
@@ -31,7 +30,7 @@ const Login = () => {
   }
 
   return (
-    <>
+    <div className={styles.login}>
       <h1>Login</h1>
       <div className="inputBox">
         <form onSubmit={loginHandler}>
@@ -51,7 +50,7 @@ const Login = () => {
           <button>Login</button>
         </form>
       </div>
-    </>
+    </div>
   )
 }
 

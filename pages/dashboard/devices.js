@@ -1,9 +1,14 @@
 import Sidebar from '../../Components/Dashboard/Sidebar'
-import Devices from '../../Components/Dashboard/Devices'
+import Devices from '../../Components/Devices/Devices'
+import isLoggedIn from '../../Functions/IsLoggedIn'
 
 import styles from '../../styles/Dashboard.module.css'
 
 const DashboardPage = () => {
+  const router = useRouter()
+  
+  isLoggedIn()
+
   return (
     <div className={styles.container}>
       <div className={styles.sidebar}>

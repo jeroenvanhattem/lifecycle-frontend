@@ -1,20 +1,29 @@
-import { useRouter } from 'next/router'
 import firebase from '../../Functions/Firebase'
 
-import styles from './Dashboard.module.css'
 import Devices from '../Devices/Devices'
+import Alarms from '../Alarms/Alarms'
+
+import styles from './Dashboard.module.css'
 
 const DashboardContent = (props) => {
-  const router = useRouter()
-
+  console.log('DASHBOARD')
+  console.log(props)
   return (
     <div className={styles.dashboard}>
-      <div className={styles.title}>
-        LifeCycle
+      
+      <div className={styles.upperRow}>
+        <div className={styles.title}>
+          LifeCycle
+        </div>
       </div>
-
-      <div className={styles.devices}>
-        <Devices />
+      
+      <div className={styles.mainRow}>
+        <div className={styles.alarms}>
+          <Alarms redux={props.redux} alarms={props.alarms} />
+        </div>
+        <div className={styles.devices}>
+          <Devices redux={props.redux} devices={props.devices} />
+        </div>
       </div>
     </div>
   )

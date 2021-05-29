@@ -1,4 +1,4 @@
-.devices {
+.alarms {
   height: auto;
   width: auto;
   padding: 20px;
@@ -7,7 +7,7 @@
   border-radius: 20px;
 }
 
-.devicesArea {
+.alarmsArea {
   height: auto;
   width: auto;
   padding: 20px;

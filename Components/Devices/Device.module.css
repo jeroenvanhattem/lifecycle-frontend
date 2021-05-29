@@ -1,0 +1,9 @@
+.device {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  display: inline-block;
+  background-color: #fff;
+  font-weight: 100;
+  border-radius: 30px;
+}
