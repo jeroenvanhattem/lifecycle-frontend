@@ -6,10 +6,26 @@
   flex-direction: column;
 }
 
+.logo {
+  height: 60px;
+  padding-top: 30px;
+  flex-grow: 1;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  font-size: 48px;
+  line-height: 0px;
+  vertical-align: middle;
+  color: #fff;
+}
+
 .icons {
   height: auto;
   padding-top: 20px;
-  flex-grow: 1
+  flex-grow: 5;
 }
 
 .icons .icon {
@@ -25,9 +41,9 @@
 }
 
 .icon span {
-  padding: 20px;
   font-size: 36px;
   line-height: 0px;
+  text-align: center;
   vertical-align: middle;
   color: #191919;
   cursor: pointer;
@@ -37,4 +53,5 @@
   height: auto;
   top: 100%;
   padding-bottom: 50px;
+  text-align: center;
 }

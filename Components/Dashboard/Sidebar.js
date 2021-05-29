@@ -6,9 +6,12 @@ import styles from './Sidebar.module.css'
 const Sidebar = () => {
   return (
     <div className={styles.sidebar}>
+    <div className={styles.logo}>
+      <span className="fa fa-bicycle"></span>
+    </div>
       <div className={styles.icons}>
         <div className={styles.icon}>
-          <span className="fa fa-mobile"></span>
+          <span className="fa fa-home"></span>
         </div>
       </div>
       <div className={styles.bottom}>
