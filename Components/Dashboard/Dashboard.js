@@ -6,8 +6,6 @@ import Alarms from '../Alarms/Alarms'
 import styles from './Dashboard.module.css'
 
 const DashboardContent = (props) => {
-  console.log('DASHBOARD')
-  console.log(props)
   return (
     <div className={styles.dashboard}>
       
@@ -19,10 +17,10 @@ const DashboardContent = (props) => {
       
       <div className={styles.mainRow}>
         <div className={styles.alarms}>
-          <Alarms redux={props.redux} alarms={props.alarms} />
+          <Alarms redux={props.redux} />
         </div>
         <div className={styles.devices}>
-          <Devices redux={props.redux} devices={props.devices} />
+          <Devices redux={props.redux} />
         </div>
       </div>
     </div>

@@ -17,14 +17,14 @@ if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
-const getDevices = async (props) => {
+const getDevices = async () => {
   const devices = []
 
   const user = firebase.auth().currentUser.email
 
   if (user) {
     try {
-      const response = await firebase
+      await firebase
         .firestore()
         .collection('devices')
         .where('owner', '==', user)
@@ -52,17 +52,14 @@ const getDevices = async (props) => {
   return devices
 }
 
-const getAlarms = async (props) => {
+const getAlarms = async () => {
   const alarms = []
-  // const user = props.user
-  const user = firebase.auth().currentUser.email
-
-  const devices = await getDevices(user)
+  const devices = await getDevices()
   
-  if (user && devices) {
-    devices.map(async (device) => {
+  if (devices) {
+    devices.map( async (device) => {
       try {
-        const response = await firebase
+        await firebase
           .firestore()
           .collection('alarms')
           .where('deviceID', '==', device.deviceID)
@@ -78,15 +75,12 @@ const getAlarms = async (props) => {
               }
               alarms.push(alarm)
             })
-          })
+      })
       } catch (error) {
         console.log(error)
       }
     })
   }
-
-  console.log('FIREBASE ALARMS')
-  console.log(alarms)
 
   return alarms
 }

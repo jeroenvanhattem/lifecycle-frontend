@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 import Alarm from './Alarm'
 import NoAlarm from './NoAlarm'
 
@@ -8,18 +9,14 @@ import styles from './Alarms.module.css'
 
 const Alarms = (props) => {
   const [alarms, setAlarms] = useState([])
-  let alarmsList = []
-
+  
   useEffect(async () => {
     const getAlarmsArray = async () => {
-      const alarmsArray = await getAlarms(props.redux)
-      console.log(alarmsArray)
+      const alarmsArray = await getAlarms()
       setAlarms(alarmsArray)
       return alarmsArray
     }
-    alarmsList = await getAlarmsArray()
-    console.log('Alarms')
-    console.log(alarmsList)
+    await getAlarmsArray()
   }, [])
 
   return (

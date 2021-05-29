@@ -1,8 +1,5 @@
 import { connect } from 'react-redux';
 
-
-import { getDevices } from '../../Functions/Firebase'
-
 import Sidebar from '../../Components/Dashboard/Sidebar'
 import Dashboard from '../../Components/Dashboard/Dashboard'
 
@@ -10,9 +7,9 @@ import styles from '../../styles/Dashboard.module.css'
 import isLoggedIn from '../../Functions/IsLoggedIn'
 
 const DashboardPage = (props) => {
-
   isLoggedIn({ isLoggedIn: props.isLoggedIn })
-
+  console.log('DASHBOARD')
+  console.log(props)
   return (
     <div className={styles.container}>
       <div className={styles.sidebar}>
@@ -31,14 +28,7 @@ const mapStateToProps = (state) => ({
   user: state.auth.user
 })
 
-const getInitialProps = ({ store }) => { }
-
-const getStaticProps = async () => {
-  if (isLoggedIn) {
-    const devices = await getDevices(isLoggedIn())
-    const alarms = await getAlarms(isLoggedIn())
-    return { devices, alarms }
-  }
+const getInitialProps = async ({ store }) => { 
 }
 
 export default connect(mapStateToProps)(DashboardPage)

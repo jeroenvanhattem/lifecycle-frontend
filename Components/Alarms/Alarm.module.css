@@ -1,13 +1,39 @@
 .alarm {
   width: auto;
   height: auto;
-  padding: 20px;
+  padding: 10px;
   display: inline-block;
   background-color: #fff;
   font-weight: 100;
   border-radius: 30px;
 }
 
-.active {
+.activeAlarm {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  display: inline-block;
+  background-color: #fff;
+  font-weight: 100;
+  border-radius: 30px;
+  border: 2px solid red;
+}
+
+.alarm h1,
+.activeAlarm h1 {
+  padding: 0px;
+  margin: 5px;
+}
+
+.alarm h3,
+.activeAlarm h3 {
+  font-weight: 200;
+  padding: 0px;
+  margin: 5px;
+}
+
+.activeText {
+  font-weight: 700;
   color: red;
+  text-align: center;
 }
