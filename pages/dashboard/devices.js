@@ -5,8 +5,6 @@ import isLoggedIn from '../../Functions/IsLoggedIn'
 import styles from '../../styles/Dashboard.module.css'
 
 const DashboardPage = () => {
-  const router = useRouter()
-  
   isLoggedIn()
 
   return (
