@@ -12,8 +12,6 @@ const Home = () => {
 
   const setIntroduction = (element) => {
     setIntroductionElement(element)
-    console.log(introductionElement)
-    console.log('Setting element')
   }
 
   const setAbout = (element) => {

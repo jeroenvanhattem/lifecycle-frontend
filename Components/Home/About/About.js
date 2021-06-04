@@ -10,7 +10,9 @@ const About = (props) => {
 
   return (
     <div id='about' className={styles.about}>
-
+      <div className={styles.picture}>
+        
+      </div>
     </div>
   )
 }

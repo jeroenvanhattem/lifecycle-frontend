@@ -1,7 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
 .introduction {
   min-height: 100vh;
   width: 100%;
-  background-color: darksalmon;
   margin: 0;
   padding: 0;
+  background-image: url('../../../Assets/circle-scatter-haikei.svg');
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  flex: 1;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.description {
+  flex: 1;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.functions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.function {
+  flex: 1;
+  text-align: center;
+}
+
+.functionLogo {
+  width: 80%;
+  padding: 10px;
+}
+
+.functionLogo span {
+  font-size: 36px;
+  line-height: 0px;
+  text-align: center;
+  vertical-align: middle;
+  color: #04d17f;
+}
+
+.functionTitle {
+  width: 80%;
+}
+
+.functionTitle h3{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.functionDescription {
+  width: 80%;
+  font-weight: 100;
+  font-size: 16px;
 }

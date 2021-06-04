@@ -1,7 +1,16 @@
 .about {
   min-height: 100vh;
   width: 100%;
-  background-color: aquamarine;
   margin: 0;
   padding: 0;
+  background-image: url('../../../Assets/blob-haikei.svg');
+  background-size: 100%;
+}
+
+.picture {
+  height: 40%;
+  width: 100%;
+  background-image: url('../../../Assets//elderly-on-bike.jpg');
+  background-repeat: no-repeat;
+
 }
