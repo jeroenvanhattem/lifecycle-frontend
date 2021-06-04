@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import Sidebar from '../../Components/Dashboard/Sidebar'
+import Sidebar from '../../Components/Dashboard/Dashboard/Sidebar'
 import Dashboard from '../../Components/Dashboard/Dashboard'
 
 import styles from '../../styles/Dashboard.module.css'
