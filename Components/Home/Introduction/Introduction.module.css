@@ -1,4 +1,7 @@
 .introduction {
   min-height: 100vh;
+  width: 100%;
   background-color: darksalmon;
+  margin: 0;
+  padding: 0;
 }
