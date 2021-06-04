@@ -1,5 +1,3 @@
-import firebase from '../../Functions/Firebase'
-
 import Devices from '../Devices/Devices'
 import Alarms from '../Alarms/Alarms'
 

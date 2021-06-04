@@ -1,10 +1,8 @@
-import Link from 'next/link'
-
 import styles from './Alarm.module.css'
  
 const Alarm = (props) => {
   console.log('Creating alarm component')
-  
+
   const date = props.alarm.alarmDateTime.toDate().toLocaleDateString("nl-NL")
   const time = props.alarm.alarmDateTime.toDate().toLocaleTimeString("nl-NL")
   const location = `https://google.com/maps?q=${props.alarm.location.latitude},${props.alarm.location.longitude}`

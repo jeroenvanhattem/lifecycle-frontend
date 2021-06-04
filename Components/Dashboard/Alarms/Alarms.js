@@ -19,6 +19,8 @@ const Alarms = (props) => {
     await getAlarmsArray()
   }, [])
 
+  console.log(alarms)
+
   return (
     <div className={styles.alarms}>
       <h1>Alarms</h1>
