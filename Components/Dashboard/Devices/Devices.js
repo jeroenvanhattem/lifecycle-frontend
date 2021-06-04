@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Device from './Device'
 import NoDevice from './NoDevice'
 
-import { getDevices } from '../../Functions/Firebase'
+import { getDevices } from '../../../Functions/Firebase'
 
 import styles from './Devices.module.css'
 

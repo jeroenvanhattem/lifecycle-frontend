@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Alarm from './Alarm'
 import NoAlarm from './NoAlarm'
 
-import { getAlarms } from '../../Functions/Firebase'
+import { getAlarms } from '../../../Functions/Firebase'
 
 import styles from './Alarms.module.css'
 
