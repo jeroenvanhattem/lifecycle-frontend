@@ -1,7 +1,7 @@
 .sidebar {
   width: 100%;
   height: 100%;
-  background-color: #4caf50;
+  background-color: #04d17f;
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +36,7 @@
   vertical-align: middle;
   width: 60px;
   height: 60px;
-  background-color: #b8e0b9;
+  background-color: #04d17f;
   border-radius: 100%;
 }
 
