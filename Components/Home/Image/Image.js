@@ -1,5 +1,3 @@
-import { useEffect, useRef } from 'react'
-
 import styles from './Image.module.css'
 
 const About = (props) => {
