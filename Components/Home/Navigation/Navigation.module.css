@@ -53,6 +53,11 @@
 
 .links a {
   color: #333;
+  cursor: pointer;
+}
+
+.links a:hover {
+  cursor: pointer;
 }
 
 .login {
@@ -66,4 +71,5 @@
   padding: 10px 40px 10px 40px;
   border: 0px;
   border-radius: 50px;
+  cursor: pointer;
 }

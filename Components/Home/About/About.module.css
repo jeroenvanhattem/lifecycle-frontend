@@ -1,16 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
 .about {
   min-height: 100vh;
   width: 100%;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  background-image: url('../../../Assets/blob-haikei.svg');
-  background-size: 100%;
-}
-
-.picture {
-  height: 40%;
-  width: 100%;
-  background-image: url('../../../Assets//elderly-on-bike.jpg');
-  background-repeat: no-repeat;
-
+  background-image: url('../../../Assets/blob.svg');
+  background-position: 70% 35%;
+  background-size: 120%;
+  display: flex;
+  flex-direction: row;
 }

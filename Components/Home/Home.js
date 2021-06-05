@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react'
 
 import Navigation from './Navigation/Navigation'
-import Introduction from './Introduction/Introduction.js'
-import About from './About/About.js'
+import Introduction from './Introduction/Introduction'
+import Image from './Image/Image'
+import About from './About/About'
 
 import styles from './Home.module.css'
 
@@ -22,6 +23,7 @@ const Home = () => {
     <div className={styles.home}>
       <Navigation introductionElement={introductionElement} aboutElement={aboutElement} />
       <Introduction setElement={setIntroduction} />
+      <Image />
       <About setElement={setAbout} />
     </div>
   )
