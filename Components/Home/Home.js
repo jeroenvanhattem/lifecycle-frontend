@@ -4,6 +4,7 @@ import Navigation from './Navigation/Navigation'
 import Introduction from './Introduction/Introduction'
 import Image from './Image/Image'
 import About from './About/About'
+import Footer from './Footer/Footer'
 
 import styles from './Home.module.css'
 
@@ -25,6 +26,7 @@ const Home = () => {
       <Introduction setElement={setIntroduction} />
       <Image />
       <About setElement={setAbout} />
+      <Footer />
     </div>
   )
 }
