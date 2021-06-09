@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
-.about {
+.contact {
   min-height: 100vh;
   width: 100%;
   margin-left: auto;
@@ -8,7 +8,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-image: url('../../../Assets/sprinkle.svg');
+  background-image: url('../../../Assets/meteor.svg');
   background-position: 70% 35%;
   background-size: 120%;
   color: #202020;
@@ -65,43 +65,7 @@
   margin-right: auto;
 }
 
-.content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  display: flex;
+.contactForm {
   flex: 1;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contentRow {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-}
-
-.contentText {
-  flex: 1;
-  flex-grow: 1;
-  text-align: center;
-}
-
-.contentText h3 {
-  font-weight: 100;
-}
-
-.contentIcon {
-  flex: 3;
-  flex-grow: 1;
-  text-align: center;
-}
-
-.contentIcon span {
-  font-size: 56px;
-  line-height: 0px;
-  text-align: center;
-  vertical-align: middle;
-  color: #04d17f;
+  width: 100%;
 }

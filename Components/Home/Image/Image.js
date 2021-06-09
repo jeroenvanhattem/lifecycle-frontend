@@ -1,20 +1,14 @@
-import Image from 'next/image'
-
 import styles from './Image.module.css'
 
-const About = (props) => {
+const Image = (props) => {
 
   return (
     <div className={styles.about}>
       <div className={styles.picture}>
-        <Image
-          src='http://lewellness.com.vn/uploads/post/90.jpg'
-          width='80%'
-          height='80%'
-        />
+        <img src='http://lewellness.com.vn/uploads/post/90.jpg' />
       </div>
     </div>
   )
 }
 
-export default About
+export default Image

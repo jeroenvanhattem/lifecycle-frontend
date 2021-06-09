@@ -27,6 +27,7 @@ const Navigation = (props) => {
         <ul>
           <li><a onClick={() => { scroll(props.introductionElement) }}>Introduction</a></li>
           <li><a onClick={() => { scroll(props.aboutElement) }}>About</a></li>
+          <li><a onClick={() => { scroll(props.contactElement) }}>Contact</a></li>
         </ul>
       </div>
       <div className={styles.login}>

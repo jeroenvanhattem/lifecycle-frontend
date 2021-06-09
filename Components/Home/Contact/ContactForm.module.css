@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactForm {
+  display: inline-flex;
+  background-color: #d6feee;
+  padding: 20px 80px 20px 80px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.contactForm h3 {
+  color: #202020;
+}
+
+.row input {
+  margin: 5px;
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 10rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.row textarea {
+  margin: 5px;
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 10rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.button {
+  background-color: #04d17f !important;
+  color: #fff;
+  padding: 10px 40px 10px 40px;
+  border: 0px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
